@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,10 +30,19 @@ namespace Cviceni_3
             Matrix m2 = new Matrix(mat2);
 
             Console.WriteLine("Add:");
-            Console.WriteLine( m1 + m2);
+            Console.WriteLine(m1 + m2);
             Console.WriteLine("Subtraction:");
             Console.WriteLine(m1 - m2);
+            Console.WriteLine("Multiplication:");
             Console.WriteLine(m1 * m2);
+            Console.WriteLine(m1 == m2);
+            Console.WriteLine(m1 != m2) ;
+            Console.WriteLine("");
+            Console.WriteLine("x(-1)");
+            Console.WriteLine(Matrix.Associated(m1));
+            Console.WriteLine("determinant: ");
+            Console.WriteLine(m2.Determinant());
+            Console.WriteLine();
             Console.ReadLine();
 
 
