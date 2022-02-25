@@ -1,0 +1,15 @@
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\bin\Debug\OOP-CV2.exe.config
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\bin\Debug\OOP-CV2.exe
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\bin\Debug\OOP-CV2.pdb
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.exe
+C:\Users\Student\source\repos\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.pdb
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.csproj.AssemblyReference.cache
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.csproj.CoreCompileInputs.cache
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.exe
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\obj\Debug\OOP-CV2.pdb
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\bin\Debug\OOP-CV2.exe.config
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\bin\Debug\OOP-CV2.exe
+C:\Users\Oem\Desktop\OOP-CV2\OOP-CV2\bin\Debug\OOP-CV2.pdb
