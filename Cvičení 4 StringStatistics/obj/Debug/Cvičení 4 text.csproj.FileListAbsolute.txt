@@ -1,0 +1,8 @@
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\bin\Debug\Cvičení 4 text.exe.config
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\bin\Debug\Cvičení 4 text.exe
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\bin\Debug\Cvičení 4 text.pdb
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\obj\Debug\Cvičení 4 text.csproj.AssemblyReference.cache
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\obj\Debug\Cvičení 4 text.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\obj\Debug\Cvičení 4 text.csproj.CoreCompileInputs.cache
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\obj\Debug\Cvičení 4 text.exe
+C:\Users\Oem\OneDrive - Vysoké učení technické v Brně\škola\VŠ\2. ročník\2. Semestr\OOP\Cvičení 4 text\obj\Debug\Cvičení 4 text.pdb
