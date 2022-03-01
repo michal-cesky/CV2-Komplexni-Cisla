@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,21 +22,21 @@ namespace Cvičení_4_text
             return text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
         }
         public int CountWords()
-         {
-             int wordCount = 0;
-             char[] separators = { ' ', ',', '?', '.', '\n' };
-             string[] subs = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-             foreach (String item in subs)
-             {
-                 wordCount += 1; 
-             }
-             return wordCount;
-         }
+        {
+            int wordCount = 0;
+            char[] separators = { ' ', ',', '?', '.', '\n' };
+            string[] count = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            foreach (String item in count)
+            {
+                wordCount += 1;
+            }
+            return wordCount;
+        }
         public int CountLines()
         {
-            var count = text.Split('\n').Length;
+            var Countlines = text.Split('\n').Length;
 
-            return count;
+            return Countlines;
         }
 
         public int CountSentences()
@@ -46,10 +46,10 @@ namespace Cvičení_4_text
             string[] count = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
             foreach (String item in count)
             {
-                CountSentences += 1 ;
+                CountSentences += 1;
             }
 
-            return CountSentences -1;
+            return CountSentences - 1;
         }
 
         public string[] LongestWords()
@@ -57,26 +57,27 @@ namespace Cvičení_4_text
             int lengthOfWord = 0;
             int numOfLongestWords = 0;
 
-            string[] textArray = SplitStringToArray();
-            for (int i = 0; i < textArray.Length; i++)
+            string[] Longestwords = SplitStringToArray();
+            for (int i = 0; i < Longestwords.Length; i++)
             {
-                if (textArray[i].Length > lengthOfWord)
+                if (Longestwords[i].Length > lengthOfWord)
                 {
-                    lengthOfWord = textArray[i].Length;
+                    lengthOfWord = Longestwords[i].Length;
                     numOfLongestWords = 1;
                 }
-                else if (textArray[i].Length == lengthOfWord)
+                else if (Longestwords[i].Length == lengthOfWord)
                 {
                     numOfLongestWords++;
                 }
             }
             string[] longest = new string[numOfLongestWords];
-            for (int i = 0; i < textArray.Length; i++)
+            for (int i = 0; i < Longestwords.Length; i++)
             {
-                if (textArray[i].Length == lengthOfWord)
+                if (Longestwords[i].Length == lengthOfWord)
                 {
 
-                    longest[Array.IndexOf(longest, null)] = textArray[i];
+                    longest[Array.IndexOf(longest, null)] = Longestwords[i];
+
                 }
             }
             return longest;
@@ -162,5 +163,20 @@ namespace Cvičení_4_text
             return alph;
 
         }
+
+        public bool Putin()
+        {
+            var word = "Putin";
+            if (text.Contains(word))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
     }
 }
+
