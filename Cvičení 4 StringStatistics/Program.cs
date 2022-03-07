@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,26 +10,27 @@ namespace Cvičení_4_text
     {
         static void Main(string[] args)
         {
-            string testovaciText = "Toto je retezec predstavovany nekolika radky,\n"
+            string text = "Toto je retezec predstavovany nekolika radky,\n"
                 + "ktere jsou od sebe oddeleny znakem LF (Line Feed).\n"
-                + "Je tu i nejaky ten vykricnik! Pro ucely testovani i otaznik?\n"
+                + "Je tu i nejaky ten vykricnik! Putin Pro ucely testovani i otaznik?\n"
                 + "Toto je jen zkratka zkr. ale ne konec vety. A toto je\n"
                 + "posledni veta!";
 
-            string[] subs = testovaciText.Split(' ');
+            string[] subs = text.Split(' ');
             Console.WriteLine("{0}", string.Join(" ", subs));
 
-            StringStatistics ss = new StringStatistics(testovaciText);
-            
+            StringStatistics ss = new StringStatistics(text);
+
             Console.WriteLine("\n");
             Console.WriteLine("Word count:" + ss.CountWords());
             Console.WriteLine("Line count:" + ss.CountLines());
             Console.WriteLine("Sentences count:" + ss.CountSentences());
-            Console.WriteLine("Longest words: {0}\n", string.Join(", ", ss.LongestWords()));
+            Console.WriteLine("Longest words:: {0}\n", string.Join(", ",ss.LongestWords()));
             Console.WriteLine("Shortest words: {0}\n", string.Join(", ", ss.ShortestWords()));
             Console.WriteLine("Most common words: {0}\n", string.Join(", ", ss.MostOftenWords()));
             Console.WriteLine("Alphabetic: {0}\n", string.Join(", ", ss.Alphabet()));
-          
+            Console.WriteLine("Is there Putin: " + ss.Putin());
+
 
             Console.ReadLine();
         }
