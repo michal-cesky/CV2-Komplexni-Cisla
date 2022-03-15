@@ -1,0 +1,15 @@
+C:\Users\Oem\Desktop\cviceni 6\bin\Debug\cviceni 6.exe.config
+C:\Users\Oem\Desktop\cviceni 6\bin\Debug\cviceni 6.exe
+C:\Users\Oem\Desktop\cviceni 6\bin\Debug\cviceni 6.pdb
+C:\Users\Oem\Desktop\cviceni 6\obj\Debug\cviceni 6.csproj.AssemblyReference.cache
+C:\Users\Oem\Desktop\cviceni 6\obj\Debug\cviceni 6.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oem\Desktop\cviceni 6\obj\Debug\cviceni 6.csproj.CoreCompileInputs.cache
+C:\Users\Oem\Desktop\cviceni 6\obj\Debug\cviceni 6.exe
+C:\Users\Oem\Desktop\cviceni 6\obj\Debug\cviceni 6.pdb
+C:\Users\Student\Source\Repos\OOP\cviceni 6\bin\Debug\cviceni 6.exe.config
+C:\Users\Student\Source\Repos\OOP\cviceni 6\bin\Debug\cviceni 6.exe
+C:\Users\Student\Source\Repos\OOP\cviceni 6\bin\Debug\cviceni 6.pdb
+C:\Users\Student\Source\Repos\OOP\cviceni 6\obj\Debug\cviceni 6.csproj.AssemblyReference.cache
+C:\Users\Student\Source\Repos\OOP\cviceni 6\obj\Debug\cviceni 6.csproj.CoreCompileInputs.cache
+C:\Users\Student\Source\Repos\OOP\cviceni 6\obj\Debug\cviceni 6.exe
+C:\Users\Student\Source\Repos\OOP\cviceni 6\obj\Debug\cviceni 6.pdb
