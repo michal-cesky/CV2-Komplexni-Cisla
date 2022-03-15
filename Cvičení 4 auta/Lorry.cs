@@ -6,17 +6,23 @@ using System.Threading.Tasks;
 
 namespace cv05
 {
-    class Lorry : Vehicle
+    class Lorry : Car
     {
         private double maxLoad;
         private double load;
 
+        private int maxPassengers;
+        private int passengers;
+
         public Lorry(double fuelAmount, FuelType fuelType)
             : base(fuelAmount, fuelType)
         {
-            this.load = 0; 
-            this.maxLoad = 25;
-            this.TankSize = 900;
+            this.load = 5; 
+            this.maxLoad = 10;
+            this.TankSize = 400;
+
+            this.passengers = 1;
+            this.maxPassengers = 3;
         }
 
         public double MaxLoad
@@ -52,9 +58,40 @@ namespace cv05
             }
         }
 
+        public int MaxPassengers
+        {
+            get { return maxPassengers; }
+            private set { maxPassengers = value; }
+        }
+
+        public int Passengers
+        {
+            get { return passengers; }
+            set
+            {
+                if (value <= maxPassengers)
+                {
+                    passengers = value;
+                }
+                else
+                {
+                    try
+                    {
+                        throw new Exception();
+                    }
+                    catch (Exception)
+                    {
+                        passengers = maxPassengers;
+                        Console.WriteLine("To many passengers: {0}\n", value);
+                    }
+                }
+            }
+        }
+
+
         public override string ToString()
         {
-            return String.Format($" Load: {Load} tonne, Max load: {MaxLoad} tonnes, Fuel amount: {FuelAmount} , Fuel: {FuelUsed}\n");
+            return String.Format($"Load: {Load} tonne, Max load: {MaxLoad} tonnes, Fuel amount: {FuelAmount} , Fuel: {FuelUsed}, Passengers: {Passengers}, Max passengers: {MaxPassengers}\n");
         }
     }
 }

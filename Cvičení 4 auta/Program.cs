@@ -10,29 +10,33 @@ namespace cv05
     {
         static void Main(string[] args)
         {
-            // init of car
-            Car car = new Car(30, Vehicle.FuelType.Benzine);
+            PassengeCar car = new PassengeCar(30, Car.FuelType.Benzine);
             Console.WriteLine("{0}:\n" + car, nameof(car));
+            car.Passengers = 6;
 
-            car.Passengers = 6; // added 6 passengers, max capacity is 5
-            Console.WriteLine("{0}:\n" + car, nameof(car));
-
-            // init of lorry
-            Lorry lorry = new Lorry(400, Vehicle.FuelType.Diesel);
+            Lorry lorry = new Lorry(400, Car.FuelType.Diesel);
             Console.WriteLine("{0}:\n" + lorry, nameof(lorry));
 
-            // refuel car with 50 l of gasoline, tank capacity is 45
-            car.Refuel(Vehicle.FuelType.Benzine, 50);
-            Console.WriteLine("{0}:\n" + car, nameof(car));
+            Console.WriteLine("car refuel:");
+            car.Refuel(Car.FuelType.Benzine, 5);
+            Console.WriteLine("" + car, nameof(car));
+            car.Passengers = 5;
 
-            // car radio
+            Console.WriteLine("\nlorry refeul:");
+            lorry.Refuel(Car.FuelType.Diesel, 20);
+
+            Console.WriteLine("lorry refeul: (wrong fuel)");
+            lorry.Refuel(Car.FuelType.Benzine, 5000);
+
+            Console.WriteLine("car radio:");
             car.RadioStatus(true);
-            car.AddStation(1, 99.6);
+            car.AddStation(1, 98.3);
             car.RadioSettings(1);
             Console.WriteLine(car.radioToString());
 
-            // lorry radio
-            lorry.RadioStatus(true);
+            Console.WriteLine("lorry radio:");
+            lorry.RadioStatus(false);
+            lorry.AddStation(1, 98.3);
             Console.WriteLine(lorry.radioToString());
 
             Console.ReadLine();

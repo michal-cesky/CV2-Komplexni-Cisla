@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cv05
 {
-    class Radio
+    class CarRadio
     {
         private double frequency;
         private bool status;
@@ -35,7 +35,7 @@ namespace cv05
         
         public void RadioSettings(int station)
         {
-            // checks if desired selection is in memory and if the radio is on
+    
             if (radioStation.ContainsKey(station) && status)
             {
                 Frequency = radioStation[station];

@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
+    <Compile Include="PassengeCar.cs" />
     <Compile Include="CarBase.cs" />
     <Compile Include="CarRadio.cs" />
     <Compile Include="Lorry.cs" />
-    <Compile Include="PassengerCar.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
