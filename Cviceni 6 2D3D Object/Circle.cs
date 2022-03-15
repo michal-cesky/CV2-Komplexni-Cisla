@@ -12,7 +12,7 @@ namespace OOP_cv6
         public Circle(double radius)
         {
             if (radius < 0) throw new Exception("Cannot create object with negative dimensions");
-            Radius = radius;
+            this.Radius = radius;
         }
         public override void Draw()
         {

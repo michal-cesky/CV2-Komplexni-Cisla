@@ -12,7 +12,7 @@ namespace OOP_cv6
         {
             GrObject[] Objects = new GrObject[]
             {
-                new Circle(10), new Rectangle(10, 5), new Ellipse(10, 5)
+                new Circle(10), new Rectangle(10, 5), new Ellipse(10, 5), new Triangle(5, 2), new Block(5, 5, 5), new Cilinder(5, 5), new Sphere(5), new Piramid(5, 5)
             };
             foreach (GrObject CurrentObject in Objects)
             {
@@ -20,17 +20,15 @@ namespace OOP_cv6
                 if (CurrentObject is Object2D)
                 {
                     Console.WriteLine("Object area: {0:F2}\n", ((Object2D)CurrentObject).CalculateArea());
-                    Console.WriteLine("Object area: {0:F2}\n", ((Object2D)CurrentObject).CalculateArea());
-                    Console.WriteLine("Object area: {0:F2}\n", ((Object2D)CurrentObject).CalculateArea());
-                    Console.ReadLine();
+   
                 }
                 if (CurrentObject is Object3D)
                 {
                     Console.WriteLine("Object surface area: {0:F2}", ((Object3D)CurrentObject).CalculateSurfaceArea());
-                    Console.WriteLine("Object volume: {0:F2}\n", ((Object3D)CurrentObject).CalculateVolume());
-                    Console.ReadLine();
+                    Console.WriteLine("Object volume area: {0:F2}", ((Object3D)CurrentObject).CalculateVolume());
                 }
             }
+            Console.ReadLine();
         }
     }
 }

@@ -43,14 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Block.cs" />
+    <Compile Include="Cilinder.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Elipse.cs" />
     <Compile Include="GrObject.cs" />
     <Compile Include="Object2D.cs" />
     <Compile Include="Object3D.cs" />
+    <Compile Include="Piramid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="Sphere.cs" />
+    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
