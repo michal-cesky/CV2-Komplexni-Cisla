@@ -8,38 +8,30 @@ namespace Cviceni_7_2D3D_Object__2_
 {
     public class Triangle : Object2D
     {
-        private double edgeA;
-        private double edgeB;
-        private double edgeC;
+        private double a;
+        private double b;
+        private double c;
 
-        public Triangle(double a, double b, double c)
+        public Triangle(double EdgeA, double EdgeB, double EdgeC)
         {
-            if ((a + b > c) && (a + c > b) && (b + c > a))
-            {
-                EdgeA = a;
-                EdgeB = b;
-                EdgeC = c;
-            }
-
-            else
-                throw new ArgumentException("Not a triangle."); ;
+                this.a = EdgeA;
+                this.b = EdgeB;
+                this.c = EdgeC;
         }
 
-        public double EdgeA { get => edgeA; set => edgeA = value; }
-        public double EdgeB { get => edgeB; set => edgeB = value; }
-        public double EdgeC { get => edgeC; set => edgeC = value; }
+        public double EdgeA { get => a; set => a = value; }
+        public double EdgeB { get => b; set => b = value; }
+        public double EdgeC { get => c; set => c = value; }
 
-
-        // Heron's formula (https://en.wikipedia.org/wiki/Heron%27s_formula)
         public override double Area()
         {
-            double s = (EdgeA + EdgeB + EdgeC) / 2;
-            return Math.Sqrt(s * (s - EdgeA) * (s - EdgeB) * (s - EdgeC));
+            double s = (a + b + c) / 2;
+            return Math.Sqrt(s * (s - a) * (s - b) * (s - c));
         }
 
         public override string ToString()
         {
-            return String.Format("Triangle: a = {0}, b = {1}, c = {2}, area = {3:0.00}", EdgeA, EdgeB, EdgeC, Area());
+            return String.Format("Triangle: a = {0}, b = {1}, c = {2}, area = {3:0.00}", a, b, c, Area());
         }
     }
 }

@@ -16,8 +16,8 @@ namespace Cviceni_7_2D3D_Object__2_
             };
 
             string[] strings =
-            {
-                "text", "text1", "testingtext", "blabla", "aaaaaaaaaaaaaa"
+           {
+                "ahoj", "dfjsafa", "AHOJJJJJJJ"
             };
 
             Circle[] circles = { new Circle(3),
@@ -36,19 +36,19 @@ namespace Cviceni_7_2D3D_Object__2_
                                      new Triangle(4, 6, 7),
                                      new Triangle(2, 5, 6) };
 
-            Square[] squares = { new Square(2),
-                                 new Square(4),
-                                 new Square(3) };
+            Square[] squares = { new Square(3),
+                                 new Square(5),
+                                 new Square(4) };
 
             Object2D[] objects = { new Circle(3),
                                    new Triangle(2, 4, 5),
                                    new Square(4) };
 
-            Console.WriteLine("Largest int: " + Extremes.Largest(integers));
-            Console.WriteLine("Smallest int: " + Extremes.Smallest(integers) + "\n");
-
             Console.WriteLine("Largest string: " + Extremes.Largest(strings));
             Console.WriteLine("Smallest string: " + Extremes.Smallest(strings) + "\n");
+
+            Console.WriteLine("Largest int: " + Extremes.Largest(integers));
+            Console.WriteLine("Smallest int: " + Extremes.Smallest(integers) + "\n");
 
             Console.WriteLine("Largest circle: " + Extremes.Largest(circles));
             Console.WriteLine("Smallest circle: " + Extremes.Smallest(circles) + "\n");

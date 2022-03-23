@@ -6,3 +6,10 @@ C:\Users\Oem\Desktop\Cviceni 7 2D3D Object (2)\bin\Debug\Cviceni 7 2D3D Object (
 C:\Users\Oem\Desktop\Cviceni 7 2D3D Object (2)\bin\Debug\Cviceni 7 2D3D Object (2).pdb
 C:\Users\Oem\Desktop\Cviceni 7 2D3D Object (2)\obj\Debug\Cviceni 7 2D3D Object (2).exe
 C:\Users\Oem\Desktop\Cviceni 7 2D3D Object (2)\obj\Debug\Cviceni 7 2D3D Object (2).pdb
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\bin\Debug\Cviceni 7 2D3D Object (2).exe.config
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\bin\Debug\Cviceni 7 2D3D Object (2).exe
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\bin\Debug\Cviceni 7 2D3D Object (2).pdb
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\obj\Debug\Cviceni 7 2D3D Object (2).csproj.AssemblyReference.cache
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\obj\Debug\Cviceni 7 2D3D Object (2).csproj.CoreCompileInputs.cache
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\obj\Debug\Cviceni 7 2D3D Object (2).exe
+C:\Users\Student\Source\Repos\OOP\Cviceni 7 2D3D Object (2)\obj\Debug\Cviceni 7 2D3D Object (2).pdb

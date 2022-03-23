@@ -24,7 +24,7 @@ namespace Cviceni_7_2D3D_Object__2_
 
         public override string ToString()
         {
-            return String.Format("Square: a = {0}, area = {1:0.00}", a);
+            return String.Format("Square: a = {0}, area = {1:0.00}", a, Area());
         }
     }
 }

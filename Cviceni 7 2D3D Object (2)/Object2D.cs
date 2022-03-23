@@ -8,7 +8,6 @@ namespace Cviceni_7_2D3D_Object__2_
 {
     public abstract class Object2D : I2D, IComparable
     {
-        // https://docs.microsoft.com/cs-cz/dotnet/api/system.icomparable.compareto?view=net-5.0
         public int CompareTo(object obj)
         {
             if (obj == null)
