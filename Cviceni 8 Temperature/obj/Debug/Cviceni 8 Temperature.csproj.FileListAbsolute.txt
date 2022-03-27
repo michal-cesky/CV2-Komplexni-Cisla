@@ -1,0 +1,8 @@
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\bin\Debug\Cviceni 8 Temperature.exe.config
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\bin\Debug\Cviceni 8 Temperature.exe
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\bin\Debug\Cviceni 8 Temperature.pdb
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\obj\Debug\Cviceni 8 Temperature.csproj.AssemblyReference.cache
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\obj\Debug\Cviceni 8 Temperature.csproj.SuggestedBindingRedirects.cache
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\obj\Debug\Cviceni 8 Temperature.csproj.CoreCompileInputs.cache
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\obj\Debug\Cviceni 8 Temperature.exe
+C:\Users\Oem\Desktop\Cviceni 8 Temperature\obj\Debug\Cviceni 8 Temperature.pdb
