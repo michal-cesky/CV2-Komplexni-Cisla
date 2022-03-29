@@ -9,6 +9,7 @@ namespace Cviceni_8_Temperature
     internal class AnnualTemperature
     {
         private int year;
+
         public List<double> MonthlyTemperatures = new List<double> { };
         public int Year { get => year; set => year = value; }
         public AnnualTemperature(int year, List<double> monthlyTemperatures)

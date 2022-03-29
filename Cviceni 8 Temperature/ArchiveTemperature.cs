@@ -11,51 +11,31 @@ namespace Cviceni_8_Temperature
     internal class ArchiveTemperature
     {
         private SortedDictionary<int, AnnualTemperature> _archive = new SortedDictionary<int, AnnualTemperature> { };
-        public void Save(string filePath)
-        {
-            StreamWriter outputFile = File.CreateText(filePath);
-            foreach (AnnualTemperature yearEntry in _archive.Values)
-            {
-                outputFile.Write(yearEntry.Year);
-                outputFile.Write(":");
-                outputFile.WriteLine(String.Join(";", yearEntry.MonthlyTemperatures.Select(s => s.ToString(CultureInfo.InvariantCulture))));
-            }
-            outputFile.Close();
-        }
-        public void Load(string path)
+        public void Load(string filePath)
         {
             string line;
             int year;
 
-            try
+            StreamReader reader = File.OpenText(filePath);
+
+            while (!reader.EndOfStream)
             {
-                StreamReader reader = File.OpenText(@path);
+                line = reader.ReadLine();
+                char[] separators = { ' ', ':', ';' };
+                string[] print = line.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+                List<double> temparatures = new List<double>();
+                 year = Int32.Parse(print[0]);
 
-                while (!reader.EndOfStream)
+                for (int i = 1; i < print.Length; i++)
                 {
-                    line = reader.ReadLine();
-                    char[] separator = { ' ', ':', ';' };
-                    string[] partition = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
-                    List<double> temparatures = new List<double>();
-
-                    year = Int32.Parse(partition[0]);
-
-                    for (int i = 1; i < partition.Length; i++)
-                    {
-                        temparatures.Add(Double.Parse(partition[i]));
-                    }
-
-                    _archive.Add(year, new AnnualTemperature(year, temparatures));
+                     temparatures.Add(Double.Parse(print[i]));
                 }
 
-                reader.Close();
-                Console.WriteLine("File {0} loaded", path);
+                _archive.Add(year, new AnnualTemperature(year, temparatures));
             }
-            catch (System.IO.FileNotFoundException)
-            {
 
-                throw new System.IO.FileNotFoundException("File not found.");
-            }
+            reader.Close();
+            Console.WriteLine("File {0} loaded", filePath);
         }
         public void Calibration(double calConstant)
         {
@@ -87,14 +67,24 @@ namespace Cviceni_8_Temperature
         {
             for (int month = 1; month <= 12; month++)
             {
-                double sum = 0;
+                double total = 0;
                 foreach (AnnualTemperature yearEntry in _archive.Values)
                 {
-                    sum += yearEntry.MonthlyTemperatures[month - 1];
+                    total += yearEntry.MonthlyTemperatures[month - 1];
                 }
-                Console.Write(" {0,6:F1}", sum / _archive.Count());
+                Console.Write("{0,6:F1}", total / _archive.Count());
             }
-            Console.WriteLine();
+        }
+        public void Save(string filePath)
+        {
+            StreamWriter outputFile = File.CreateText(filePath);
+            foreach (AnnualTemperature yearEntry in _archive.Values)
+            {
+                outputFile.Write(yearEntry.Year);
+                outputFile.Write(":");
+                outputFile.WriteLine(String.Join(";", yearEntry.MonthlyTemperatures.Select(s => s.ToString(CultureInfo.InvariantCulture))));
+            }
+            outputFile.Close();
         }
     }
 }
