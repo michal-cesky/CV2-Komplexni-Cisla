@@ -24,7 +24,7 @@ namespace Cviceni_8_Temperature
                 char[] separators = { ' ', ':', ';' };
                 string[] print = line.Split(separators, StringSplitOptions.RemoveEmptyEntries);
                 List<double> temparatures = new List<double>();
-                 year = Int32.Parse(print[0]);
+                year = Int32.Parse(print[0]);
 
                 for (int i = 1; i < print.Length; i++)
                 {
@@ -35,19 +35,7 @@ namespace Cviceni_8_Temperature
             }
 
             reader.Close();
-            Console.WriteLine("File {0} loaded", filePath);
-        }
-        public void Calibration(double calConstant)
-        {
-            foreach (AnnualTemperature yearEntry in _archive.Values)
-            {
-                yearEntry.MonthlyTemperatures = yearEntry.MonthlyTemperatures.Select(s => s + calConstant).ToList();
-            }
-        }
-        public AnnualTemperature Find(int year)
-        {
-            if (!_archive.ContainsKey(year)) throw new Exception("This entry does not exist");
-            return _archive[year];
+            Console.WriteLine("{0} loaded", filePath);
         }
         public void PrintTemperatures()
         {
@@ -56,6 +44,7 @@ namespace Cviceni_8_Temperature
                 Console.WriteLine(yearEntry.Year + ":" + String.Join(" ", yearEntry.MonthlyTemperatures.Select(s => String.Format("{0,6:F1}", s))));
             }
         }
+        
         public void PrintAverageAnnualTemperatures()
         {
             foreach (AnnualTemperature yearEntry in _archive.Values)
@@ -72,7 +61,14 @@ namespace Cviceni_8_Temperature
                 {
                     total += yearEntry.MonthlyTemperatures[month - 1];
                 }
-                Console.Write("{0,6:F1}", total / _archive.Count());
+                Console.Write("{0,5:F1}", total / _archive.Count());
+            }
+        }
+        public void Calibration(double calib)
+        {
+            foreach (AnnualTemperature yearEntry in _archive.Values)
+            {
+                yearEntry.MonthlyTemperatures = yearEntry.MonthlyTemperatures.Select(s => s + calib).ToList();
             }
         }
         public void Save(string filePath)
