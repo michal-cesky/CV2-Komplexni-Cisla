@@ -8,15 +8,14 @@ namespace Cviceni_8_Temperature
 {
     internal class AnnualTemperature
     {
-        private int year;
-        public List<double> MonthlyTemperatures = new List<double> { };
-        public int Year { get => year; set => year = value; }
+        public List<double> MonthlyTemperatures = new List<double>();
+        public int Year { get; set; }
         public AnnualTemperature(int year, List<double> monthlyTemperatures)
         {
-            Year = year;
-            MonthlyTemperatures = monthlyTemperatures;
+            this.Year = year;
+            this.MonthlyTemperatures = monthlyTemperatures;
         }
-        public double MaxTemperature { get => MonthlyTemperatures.Max(); }
+        public double MaxTemperature => MonthlyTemperatures.Max();
         public double MinTemperature { get => MonthlyTemperatures.Min(); }
         public double AverageAnnualTemperature { get => MonthlyTemperatures.Average(); }
     }

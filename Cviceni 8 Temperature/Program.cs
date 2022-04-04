@@ -7,37 +7,34 @@ namespace Cviceni_8_Temperature
         static void Main(string[] args)
         {
             ArchiveTemperature archive = new ArchiveTemperature();
-            Console.WriteLine("Open file\n");
-            Console.WriteLine();
+            
             try
             {
-                archive.Load(@"archiveInput.txt");
+                archive.Load("inputFile.txt");
             }
             catch (System.IO.FileNotFoundException)
             {
-                throw new System.IO.FileNotFoundException("File not found.");
-                return;
+                throw new System.IO.FileNotFoundException("File not found");
             }
-            Console.WriteLine("Loaded file\n");
+
             archive.PrintTemperatures();
-            Console.WriteLine("Average temperatures for all years:");
+            Console.WriteLine("\nAverage temperatures (years)");
             archive.PrintAverageAnnualTemperatures();
-            Console.WriteLine("Average monthly temperatures:");
+            Console.WriteLine("\nAverage temperatures (months)");
             archive.PrintAverageMonthlyTemperatures();
             archive.Calibration(-0.1);
-            Console.WriteLine("Temperatures after calibration of -0.1:");
+            Console.WriteLine("\n\nTemperatures calibration (-0.1)");
             archive.PrintTemperatures();
-            Console.WriteLine("file save");
-            Console.ReadLine();
+
             try
             {
-                archive.Save(@"D:\archiveOutput.txt");
+                archive.Save("outputFile.txt");
             }
             catch (System.IO.FileNotFoundException)
             {
-                throw new System.IO.FileNotFoundException("File not found.");
-                return;
+                throw new System.IO.FileNotFoundException("File not found");
             }
+
             Console.ReadLine();
         }
     }
