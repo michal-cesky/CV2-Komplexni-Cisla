@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Oem\\Desktop\\Cviceni 09 calculator\\Cviceni 09 calculator.csproj",
+      "projectUniqueName": "C:\\Users\\Oem\\OneDrive - Vysoké učení technické v Brně\\škola\\VŠ\\2. ročník\\2. Semestr\\OOP\\Cviceni 9 calculator\\Cviceni 09 calculator.csproj",
       "projectName": "Cviceni 09 calculator",
-      "projectPath": "C:\\Users\\Oem\\Desktop\\Cviceni 09 calculator\\Cviceni 09 calculator.csproj",
+      "projectPath": "C:\\Users\\Oem\\OneDrive - Vysoké učení technické v Brně\\škola\\VŠ\\2. ročník\\2. Semestr\\OOP\\Cviceni 9 calculator\\Cviceni 09 calculator.csproj",
       "packagesPath": "C:\\Users\\Oem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Oem\\Desktop\\Cviceni 09 calculator\\obj\\",
+      "outputPath": "C:\\Users\\Oem\\OneDrive - Vysoké učení technické v Brně\\škola\\VŠ\\2. ročník\\2. Semestr\\OOP\\Cviceni 9 calculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

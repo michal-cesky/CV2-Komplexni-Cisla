@@ -30,7 +30,7 @@ namespace Cviceni_09_calculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            calculator.Buttons((sender as Button).Content.ToString());
+            calculator.Button((sender as Button).Content.ToString());
             Display.Text = calculator.Display;
             //memory.Content = calculator.Memory;
         }
