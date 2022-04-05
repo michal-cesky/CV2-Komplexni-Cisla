@@ -25,14 +25,12 @@ namespace Cviceni_09_calculator
         {
             InitializeComponent();
             Display.Text = calculator.Display;
-            //memory.Content = calculator.Memory;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             calculator.Button((sender as Button).Content.ToString());
             Display.Text = calculator.Display;
-            //memory.Content = calculator.Memory;
         }
     }
 }

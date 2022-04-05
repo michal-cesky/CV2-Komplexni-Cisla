@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NyPz4i7dfj54m0diML7KaPC2r6jK+wfFuABDYeWnSiLSp+pOchIAlOoFvkCKz9QuJz23Pp7Vw7HpdjsMNKOBEQ==",
+  "dgSpecHash": "B1Jm9b9VhSRsfK1AfqSgHQUUEDkaWmrGrC4KGTsF9oyyfZ+ZEa2ldEz0s+WyeLKuG4a0zI2kQywkweTO6lvYgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Oem\\OneDrive - Vysoké učení technické v Brně\\škola\\VŠ\\2. ročník\\2. Semestr\\OOP\\Cviceni 9 calculator\\Cviceni 09 calculator.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Oem\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
-    "C:\\Users\\Oem\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Oem\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Oem\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Student\\Source\\Repos\\OOP\\Cviceni 9 calculator\\Cviceni 09 calculator.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
