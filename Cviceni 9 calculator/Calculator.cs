@@ -12,15 +12,16 @@ namespace Cviceni_09_calculator
         public string Memory;
         private string firstNumber;
         private string secondNumber;
+     //   private double KC;
         private string operand;
         private double result;
         private double numInMemory;
-        string error;
         private enum State
         {
             FirstNumber,
             Operation,
             SecondNumber,
+    //        KC,
             Result
         };
         private State _state;
@@ -29,8 +30,8 @@ namespace Cviceni_09_calculator
             Memory = "";
             firstNumber = "";
             secondNumber = "";
+    //        KC = 0.256;
             operand = "";
-            error = "";
             result = 0;
             numInMemory = 0;
             _state = State.FirstNumber;
@@ -48,7 +49,6 @@ namespace Cviceni_09_calculator
                     case State.SecondNumber:
                         return firstNumber + operand + secondNumber;
                     case State.Result:
-                        if (error.Length > 0) return error;
                         return result.ToString();
                     default:
                         return "";
@@ -78,7 +78,7 @@ namespace Cviceni_09_calculator
                 case "M-":
                     processMemoryOperation(buttonContent);
                     break;
-                case "<-":
+                case "<=":
                 case "CE":
                 case "C":
                     processClearOperation(buttonContent);
@@ -88,6 +88,7 @@ namespace Cviceni_09_calculator
                 case "-":
                 case "/":
                 case "*":
+                case " KC ":
                 case ",":
                     processOperand(buttonContent);
                     break;
@@ -109,10 +110,6 @@ namespace Cviceni_09_calculator
                 case State.Operation:
                     secondNumber += number;
                     _state = State.SecondNumber;
-                    break;
-                case State.Result:
-                    clearDisplay();
-                    firstNumber += number;
                     break;
             }
         }
@@ -138,24 +135,16 @@ namespace Cviceni_09_calculator
                         case State.SecondNumber:
                             secondNumber = numInMemory.ToString();
                             break;
-                        case State.Result:
-                            clearDisplay();
-                            firstNumber = numInMemory.ToString();
-                            break;
                     }
                     break;
                 case "MS":
                     switch (_state)
                     {
-                        case State.Operation:
                         case State.FirstNumber:
                             if (firstNumber != "") numInMemory = Double.Parse(firstNumber);
                             break;
                         case State.SecondNumber:
                             if (secondNumber != "") numInMemory = Double.Parse(secondNumber);
-                            break;
-                        case State.Result:
-                            numInMemory = result;
                             break;
                     }
                     Memory = "M";
@@ -172,9 +161,6 @@ namespace Cviceni_09_calculator
                         case State.SecondNumber:
                             if (secondNumber != "") numInMemory += Double.Parse(secondNumber);
                             break;
-                        case State.Result:
-                            numInMemory += result;
-                            break;
                     }
                     break;
                 case "M-":
@@ -189,18 +175,16 @@ namespace Cviceni_09_calculator
                         case State.SecondNumber:
                             if (secondNumber != "") numInMemory -= Double.Parse(secondNumber);
                             break;
-                        case State.Result:
-                            numInMemory -= result;
-                            break;
                     }
                     break;
+
             }
         }
         private void processClearOperation(string clearButton)
         {
             switch (clearButton)
             {
-                case "<-":
+                case "<=":
                     switch (_state)
                     {
                         case State.FirstNumber:
@@ -218,9 +202,6 @@ namespace Cviceni_09_calculator
                             }
                             else _state = State.FirstNumber;
                             break;
-                        case State.Result:
-                            clearDisplay();
-                            break;
                     }
                     break;
                 case "C":
@@ -234,9 +215,6 @@ namespace Cviceni_09_calculator
                             break;
                         case State.SecondNumber:
                             secondNumber = "";
-                            break;
-                        case State.Result:
-                            clearDisplay();
                             break;
                         default:
                             break;
@@ -261,14 +239,11 @@ namespace Cviceni_09_calculator
                         case State.SecondNumber:
                             negateString(ref secondNumber);
                             break;
-                        case State.Result:
-                            clearDisplay();
-                            firstNumber = (-result).ToString();
-                            break;
                     }
                     break;
                 case "+":
                 case "-":
+                case " KC ":
                 case "*":
                 case "/":
                     switch (_state)
@@ -278,9 +253,6 @@ namespace Cviceni_09_calculator
                             break;
                         case State.SecondNumber:
                             calculateResult();
-                            firstNumber = result.ToString();
-                            break;
-                        case State.Result:
                             firstNumber = result.ToString();
                             break;
                         default:
@@ -304,10 +276,6 @@ namespace Cviceni_09_calculator
                             secondNumber = "0,";
                             _state = State.SecondNumber;
                             break;
-                        case State.Result:
-                            clearDisplay();
-                            firstNumber = "0,";
-                            break;
                     }
                     break;
             }
@@ -316,7 +284,6 @@ namespace Cviceni_09_calculator
         {
             if (firstNumber == "") firstNumber = "0";
             if (secondNumber == "") secondNumber = "0";
-            error = "";
             switch (operand)
             {
                 case "+":
@@ -329,8 +296,10 @@ namespace Cviceni_09_calculator
                     result = Double.Parse(firstNumber) * Double.Parse(secondNumber);
                     break;
                 case "/":
-                    if (secondNumber == "0") error = "NaN";
-                    else result = Double.Parse(firstNumber) / Double.Parse(secondNumber);
+                    result = Double.Parse(firstNumber) / Double.Parse(secondNumber);
+                    break;
+                case " KC ":
+                    result = Double.Parse(firstNumber) * 0.265;
                     break;
                 default:
                     break;
