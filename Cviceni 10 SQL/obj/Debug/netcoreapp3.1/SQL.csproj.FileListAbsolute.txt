@@ -1,0 +1,10 @@
+C:\Users\Student\source\repos\SQL\bin\Debug\netcoreapp3.1\SQL.deps.json
+C:\Users\Student\source\repos\SQL\bin\Debug\netcoreapp3.1\SQL.dll
+C:\Users\Student\source\repos\SQL\bin\Debug\netcoreapp3.1\SQL.pdb
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.AssemblyInfo.cs
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.dll
+C:\Users\Student\source\repos\SQL\obj\Debug\netcoreapp3.1\SQL.pdb

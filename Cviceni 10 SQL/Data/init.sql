@@ -1,0 +1,24 @@
+﻿
+CREATE TABLE Students
+(
+	IdStudent INT NOT NULL PRIMARY KEY IDENTITY(0,1),
+	Name NVARCHAR(20) NOT NULL,
+	Surname NVARCHAR(20) NOT NULL,
+	DateOfBearth DATETIME NOT NULL
+)
+
+CREATE TABLE Subjects
+(
+	Id INT NOT NULL PRIMARY KEY IDENTITY(0,1),
+	Shortcut NCHAR(10) NOT NULL,
+	SubjectName NVARCHAR(20) NOT NULL
+)
+
+CREATE TABLE Marks 
+(
+	IDStudent INT FOREIGN KEY REFERENCES Students(IdStudent),
+	IDSubject INT FOREIGN KEY REFERENCES Subjects(Id),
+	MarkDate DATETIME,
+	Mark INT CHECK (mark >= 0 and mark <=5),
+	PRIMARY KEY (IDStudent, IDSubject)
+)
