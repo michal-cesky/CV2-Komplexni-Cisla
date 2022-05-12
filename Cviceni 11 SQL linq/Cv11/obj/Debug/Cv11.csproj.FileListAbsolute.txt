@@ -1,0 +1,9 @@
+C:\Users\Student\Downloads\Cv11\Cv11\obj\Debug\Cv11.csproj.AssemblyReference.cache
+C:\Users\Student\Downloads\Cv11\Cv11\obj\Debug\Cv11.csproj.CoreCompileInputs.cache
+C:\Users\Student\Downloads\Cv11\Cv11\bin\Debug\Vyuka.mdf
+C:\Users\Student\Downloads\Cv11\Cv11\bin\Debug\Vyuka_log.ldf
+C:\Users\Student\Downloads\Cv11\Cv11\bin\Debug\Cv11.exe.config
+C:\Users\Student\Downloads\Cv11\Cv11\bin\Debug\Cv11.exe
+C:\Users\Student\Downloads\Cv11\Cv11\bin\Debug\Cv11.pdb
+C:\Users\Student\Downloads\Cv11\Cv11\obj\Debug\Cv11.exe
+C:\Users\Student\Downloads\Cv11\Cv11\obj\Debug\Cv11.pdb
